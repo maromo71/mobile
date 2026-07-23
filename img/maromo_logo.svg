@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" width="220" height="70">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b32d26" />
+      <stop offset="100%" stop-color="#e03e36" />
+    </linearGradient>
+    <style>
+      .logo-text-primary { fill: #0f2b3c; transition: fill 0.3s ease; }
+      .logo-text-secondary { fill: #5e6d7a; transition: fill 0.3s ease; font-weight: bold; }
+      .logo-accent { fill: url(#brandGrad); }
+      .logo-outline-phone { stroke: #0f2b3c; stroke-width: 2.5; fill: none; transition: stroke 0.3s ease; }
+      
+      @media (prefers-color-scheme: dark) {
+        .logo-text-primary { fill: #f9fafb; }
+        .logo-outline-phone { stroke: #cbd5e1; }
+        .logo-text-secondary { fill: #cbd5e1; }
+      }
+    </style>
+  </defs>
+  <!-- Símbolo: Celular + Letra M -->
+  <g transform="translate(10, 8)">
+    <!-- Celular Outline -->
+    <rect class="logo-outline-phone" x="4" y="2" width="34" height="50" rx="6" />
+    <!-- Botão superior -->
+    <line class="logo-outline-phone" x1="16" y1="6" x2="26" y2="6" stroke-linecap="round" />
+    <!-- Círculo botão home inferior -->
+    <circle class="logo-outline-phone" cx="21" cy="46" r="2.5" />
+    
+    <!-- Letra M Estilizada dentro do Celular -->
+    <path class="logo-accent" d="M10 38 V 18 L 21 29 L 32 18 V 38 H 28 V 26 L 21 32 L 14 26 V 38 Z" />
+  </g>
+  
+  <!-- Textos -->
+  <text class="logo-text-primary" x="62" y="34" font-family="'Open Sans', sans-serif" font-weight="800" font-size="22" letter-spacing="1">MAROMO</text>
+  <text class="logo-text-secondary" x="62" y="52" font-family="'Open Sans', sans-serif" font-weight="700" font-size="10" letter-spacing="1.5">MOBILE DEV</text>
+</svg>

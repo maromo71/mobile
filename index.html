@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal acadêmico do curso de Desenvolvimento de Aplicações Mobile com materiais de apoio, pilares e informações da disciplina.">
+    <title>Desenvolvimento de Aplicações Mobile - Maromo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="#top" class="brand" aria-label="Portal Mobile - início">
+                <img src="img/maromo_logo.svg" alt="Logotipo Maromo Mobile Dev"
+                    onerror="this.onerror=null;this.src='https://placehold.co/220x70/0f2b3c/ffffff?text=Maromo+Mobile';">
+                <div>
+                    <span class="eyebrow">Maromo</span>
+                    <strong class="brand-title">Desenvolvimento Mobile</strong>
+                </div>
+            </a>
+
+            <nav class="nav-links" aria-label="Navegação principal">
+                <a href="#fundamentos">Fundamentos</a>
+                <a href="#materiais">Materiais</a>
+                <a href="#informacoes">Informações</a>
+                <button id="theme-toggle" type="button" class="theme-toggle" aria-label="Alternar tema">
+                    <svg id="theme-toggle-dark-icon" class="icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="icon hidden" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top" class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <span class="pill">Curso Prático &amp; Moderno</span>
+                <h1>Desenvolvimento de Aplicações Mobile com tecnologias atuais.</h1>
+                <p>Explore o desenvolvimento mobile multiplataforma. Acesse os materiais de aula, entenda a estrutura lógica e conecte seus aplicativos a bases de dados em nuvem usando React Native, Expo e Supabase.</p>
+                <div class="hero-actions">
+                    <a href="#materiais" class="btn btn-primary">Acessar materiais</a>
+                    <a href="#informacoes" class="btn btn-secondary">Ver informações</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <strong>9</strong>
+                        <span>Materiais em PDF</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>4</strong>
+                        <span>Fundamentos chave</span>
+                    </div>
+                    <div class="stat-card">
+                        <strong>72h</strong>
+                        <span>Carga horária</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="hero-panel-card">
+                    <h2>Resumo do curso</h2>
+                    <ul>
+                        <li>Objetivo: capacitar no desenvolvimento de apps móveis rápidos e fluidos.</li>
+                        <li>Metodologia: foco em projetos práticos do zero ao deploy e integração.</li>
+                        <li>Formato: aprendizagem ativa utilizando React Native, Expo e Supabase.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="fundamentos" class="section-block">
+            <div class="section-heading">
+                <span class="pill pill-alt">Fundamentos</span>
+                <h2>Os pilares do desenvolvimento mobile</h2>
+                <p>Conceitos cruciais para estruturar aplicativos escaláveis, reativos e com alto desempenho.</p>
+            </div>
+            <div class="pillars-grid">
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Componentes &amp; Layout</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Criação de UIs responsivas e flexíveis utilizando Flexbox e componentes fundamentais do Expo/React Native.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Gerenciamento de Estado</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Uso inteligente de React Hooks como useState e useEffect para controlar dinamicamente o fluxo de dados na interface.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Navegação &amp; Fluxos</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Roteamento dinâmico e transições de tela fluidas através de Stack, Tab e Drawer navigation.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <h3>Persistência &amp; APIs</h3>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Conexão com bancos na nuvem (Supabase), tratamento de dados assíncronos e armazenamento local (AsyncStorage).</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="materiais" class="section-block">
+            <div class="section-heading">
+                <span class="pill pill-alt">Materiais</span>
+                <h2>Materiais organizados por unidade</h2>
+                <p>Baixe as apostilas e roteiros em PDF correspondentes a cada módulo do curso.</p>
+            </div>
+            <div class="materials-grid">
+                <a href="materiais/MOBILE_001.pdf" target="_blank" class="material-card">
+                    <span class="material-number">01</span>
+                    <h3>Material 01</h3>
+                    <p>Introdução ao JavaScript como base para React: histórico, tipos de dados, variáveis, escopo, operadores e controle.</p>
+                </a>
+                <a href="materiais/MOBILE_002.pdf" target="_blank" class="material-card">
+                    <span class="material-number">02</span>
+                    <h3>Material 02</h3>
+                    <p>Manipulação de DOM, seleção de elementos, eventos e programação assíncrona com callbacks, Promises e async/await.</p>
+                </a>
+                <a href="materiais/MOBILE_003.pdf" target="_blank" class="material-card">
+                    <span class="material-number">03</span>
+                    <h3>Material 03</h3>
+                    <p>Estrutura de frameworks e bibliotecas, conceitos básicos do React JS, componentes, JSX, Virtual DOM, hooks e SPA com Vite.</p>
+                </a>
+                <a href="materiais/MOBILE_004.pdf" target="_blank" class="material-card">
+                    <span class="material-number">04</span>
+                    <h3>Material 04</h3>
+                    <p>Estado e eventos com React Hook useState, manipulação de cliques, lógica de números aleatórios e rotas dinâmicas.</p>
+                </a>
+                <a href="materiais/MOBILE_005.pdf" target="_blank" class="material-card">
+                    <span class="material-number">05</span>
+                    <h3>Material 05</h3>
+                    <p>Introdução ao Next.js, explorando SSR, SSG, roteamento baseado em arquivos de páginas, deploy e hospedagem na Vercel.</p>
+                </a>
+                <a href="materiais/MOBILE_006.pdf" target="_blank" class="material-card">
+                    <span class="material-number">06</span>
+                    <h3>Material 06</h3>
+                    <p>Fundamentos de desenvolvimento mobile nativo vs híbrido, introdução ao Expo/React Native e layout flexível com Flexbox.</p>
+                </a>
+                <a href="materiais/MOBILE_007.pdf" target="_blank" class="material-card">
+                    <span class="material-number">07</span>
+                    <h3>Material 07</h3>
+                    <p>Navegação estruturada, integração de APIs simuladas, detalhes de itens, persistência offline com AsyncStorage e CineApp.</p>
+                </a>
+                <a href="materiais/MOBILE_008.pdf" target="_blank" class="material-card">
+                    <span class="material-number">08</span>
+                    <h3>Material 08</h3>
+                    <p>Operações de CRUD com Expo e Supabase: configuração do backend, hooks de foco, botões flutuantes (FAB) e banco na nuvem.</p>
+                </a>
+                <a href="materiais/MOBILE_009.pdf" target="_blank" class="material-card">
+                    <span class="material-number">09</span>
+                    <h3>Material 09</h3>
+                    <p>Desenvolvimento em tempo real e notificações push locais com Expo Notifications e atualizações Supabase Realtime.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="informacoes" class="section-block">
+            <div class="section-heading">
+                <span class="pill pill-alt">Informações</span>
+                <h2>Informações acadêmicas da disciplina</h2>
+                <p>Consulte os objetivos gerais, metodologia pedagógica e critérios de avaliação do curso.</p>
+            </div>
+
+            <div class="info-grid">
+                <article class="info-card">
+                    <h3>Objetivo</h3>
+                    <p>Desenvolver aplicativos híbridos de alta performance compatíveis com Android e iOS, integrando serviços nativos e bancos na nuvem.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Carga horária</h3>
+                    <p>4 horas semanais, totalizando 72 horas semestrais divididas igualmente entre conceitos teóricos e labs de codificação.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Avaliação</h3>
+                    <p>Nota semestral obtida pela fórmula: <strong>PRJ1 × 0,30 + PRJ2 × 0,40 + ATIV × 0,30</strong> (onde PRJ são projetos e ATIV são exercícios práticos).</p>
+                </article>
+            </div>
+
+            <div class="accordion-stack">
+                <div class="accordion-item active">
+                    <h3 class="accordion-header">
+                        <button type="button" class="accordion-toggle">
+                            <span>Metodologia pedagógica</span>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </h3>
+                    <div class="accordion-content">
+                        <p>O curso adota metodologias ativas com foco no aprendizado baseado em projetos práticos. A cada módulo, o conteúdo conceitual é introduzido e consolidado por meio do desenvolvimento guiado de aplicativos reais de complexidade incremental.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button type="button" class="accordion-toggle">
+                            <span>Referências bibliográficas recomendadas</span>
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                    </h3>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>React Native &amp; Expo:</strong> Documentações Oficiais (reactnative.dev e docs.expo.dev).</li>
+                            <li><strong>Supabase Cloud Service:</strong> Documentação e Guias Rápidos (supabase.com/docs).</li>
+                            <li><strong>Flanagan, David:</strong> JavaScript: O Guia Definitivo (Editora O'Reilly).</li>
+                            <li><strong>Bertoli, Michele:</strong> React Design Patterns and Best Practices (Editora Packt).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2026 - Curso de Desenvolvimento de Aplicações Mobile</p>
+            <p>Desenvolvido por Prof. Mestre Marcos Roberto de Moraes [Maromo]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
